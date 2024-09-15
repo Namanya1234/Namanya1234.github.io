@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("navbar.html");
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="nav-header">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <nav class="nav nav-header-menu">
+                        <a class="nav-link rounded active" href="index.html">Home</a>
+                        <a class="nav-link rounded" href="wlan.html">WLAN Network Design</a>
+                        <a class="nav-link rounded" href="cyber_sec.html">Cyber Security(SA)</a>
+                        <a class="nav-link rounded" href="comp_virus.html">Computer Virus(SB)</a>
+                        <a class="nav-link rounded" href="cyber_attack.html">Cybersecurity Attacks(SC)</a>
+                        <div class="nav-item dropdown d-md-inline-block">
+                            <a id="navbarDropdown" href="#"
+                                class="nav-link me-6 me-sm-4 d-none d-md-inline-block text-white dropdown-toggle rounded"
+                                role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                v-pre>More</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="cv_student1.html">CV (Student 1)</a>
+                                <a class="dropdown-item" href="cv_student2.html">CV (Student 2)</a>
+                                <a class="dropdown-item" href="references.html">References</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="title has-anchor" id="title">
+        <div class="container content">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <div class="site-title">
+                        <p>ECE2500 Assignment 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details-name" id="details">
+        <div class="container">
+            <div class="row mx-4">
+                <div class="col-sm-12 col-md-6">
+                    <div class="details-text">
+                        <h2 class="about-text">Student 1</h2>
+                        <img class="about-image rounded" src="../ECE2500-Assignment3/images/rio.jpeg" alt="">
+                        <p>Ammar Rio Nugroho</p>
+                        <p>2313112006</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="details-text">
+                        <h2 class="about-text">Student 2</h2>
+                        <img class="about-image rounded" src="../ECE2500-Assignment3/images/real_rafa.jpg" alt="">
+                        <p>Rafa Maheswara Putra Rukmanto</p>
+                        <p>2313112001</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="details-text">
+                        <h2 class="about-text">Manager</h2>
+                        <img class="about-image rounded" src="../ECE2500-Assignment3/images/sir_eko.png" alt="">
+                        <p>Kartiko Eko Putranto</p>
+                        <p>MCD4700/ECE2500</p>
+                        <p>13 September 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-site" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 align-items-center">
+                    <div class="main-paragraph">
+                        <h1 class="about-text text-center">ABOUT</h1>
+                        <p class="about-site-text">
+                            This webpage is created to present the result of our Assignment 3 for MCD4700/ECE2500. It
+                            would have the
+                            pictures of from our WLAN survey along with the researches that we have done on boot sector
+                            Virus and
+                            SQL injection attacks.
+                        </p>
+                        <p class="about-site-text">
+                            We hope to whoever view this page to enjoy what we have done for this webpage. It is
+                            completely unnecessary
+                            to do what we did, yet it was fun to be in full control of the website we have created. We
+                            learnt a lot of not only
+                            about WLAN, boot sector virus, and SQL injection attacks, but also about making the
+                            front-end portion of a website along
+                            with working with git.
+                        </p>
+                        <p class="about-site-text">
+                            Our CV and the references that we have used is in the More section of the navigation bar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

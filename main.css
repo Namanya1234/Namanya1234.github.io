@@ -1,0 +1,266 @@
+/* Fonts */
+@font-face {
+    font-family: 'KGRedHand';
+    src: url(../ECE2500-Assignment3/fonts/KGRedHands.ttf);
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(../ECE2500-Assignment3/fonts/Futura.ttc);
+}
+
+@font-face {
+    font-family: 'CreamCake';
+    src: url(../ECE2500-Assignment3/fonts/CreamCake.otf);
+}
+
+/* Whoole body (it doesn't work though) */
+body {
+    background-color: darkblue;
+}
+
+/* Navigation bar */
+.header {
+    background: gray;
+    border-top: none;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    z-index: 0;
+    opacity: 100%;
+}
+
+.nav-header-menu {
+    justify-content: center;
+}
+
+.nav-header-menu {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.dropdown-menu {
+    opacity: 100%;
+}
+
+.nav .nav-link {
+    color: white;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.nav-brand:hover,
+.nav-link:hover {
+    background-color: #a1a1a1;
+    color: #3f3f3f;
+}
+
+.nav-link.active {
+    background-color: lightgray;
+    color: #3f3f3f;
+}
+
+/* .link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.header {
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+    min-height: 60px;
+    width: 100%;
+}
+
+.dropdown.active+.link,
+.link:hover {
+    color: black;
+} */
+
+/* .dropdown {
+    position: relative;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100%+.25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    /* Adjust the max-height or other properties to fit the content properly */
+/* max-height: 250px;
+overflow-y: auto; */
+/* Enable vertical scrolling if the content exceeds the height */
+/* } */
+
+*/
+/* .dropdown.active>.link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+} */
+
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+
+/* .dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25 rem;
+} */
+
+/* Main Page */
+.title {
+    background: url(../ECE2500-Assignment3/images/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.site-title {
+    font-family: 'KGRedHand';
+    font-size: 75px;
+    font-weight: bolder;
+    margin-top: 20px;
+    color: rgb(255, 255, 198);
+    text-align: center;
+    /* margin-left: 5rem; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-text {
+    font-family: 'KGRedHand';
+    font-weight: bold;
+}
+
+.about-image {
+    margin-bottom: 10px;
+    height: 40vh;
+    width: auto;
+}
+
+.details-text {
+    font-family: 'CreamCake';
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 50;
+}
+
+.main-paragraph {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-content: center;
+}
+
+.about-site-text {
+    font-family: 'Futura';
+}
+
+/* WLAN report */
+.heatmap-img-overlay {
+    height: 80vh;
+    width: auto;
+}
+
+.heatmap-img-individual {
+    height: 40vh;
+    width: auto;
+    text-align: center;
+}
+
+.modal-content {
+    background: none;
+}
+
+.modal-body .img-fluid {
+    height: auto;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 90vh;
+    object-fit: scale-down;
+}
+
+.image-carousel {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: darkgray;
+}
+
+.image-slide {
+    height: 45vw;
+    object-fit: contain;
+}
+
+/* Report */
+.cyber-title {
+    font-family: 'KGRedHand';
+    font-weight: 200;
+}
+
+.cyber-text {
+    font-family: 'Futura';
+}
+
+.cyber-img {
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* CV student 1 */
+.self-about-text {
+    font-family: 'Futura';
+    padding: 10px;
+}
+
+.self-about-image {
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-self {
+    height: 60vh;
+    width: auto;
+}
+
+/* CV student 2 */
+.image-rafa {
+    height: 53vh;
+}
+
+/* References */
+.reference-text {
+    font-family: 'Futura';
+    text-align: center;
+    margin: 20px;
+}

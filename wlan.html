@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WLAN Network Design</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="nav-header">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <nav class="nav nav-header-menu">
+                        <a class="nav-link rounded" href="index.html">Home</a>
+                        <a class="nav-link rounded active" href="wlan.html">WLAN Network Design</a>
+                        <a class="nav-link rounded" href="cyber_sec.html">Cyber Security(SA)</a>
+                        <a class="nav-link rounded" href="comp_virus.html">Computer Virus(SB)</a>
+                        <a class="nav-link rounded" href="cyber_attack.html">Cybersecurity Attacks(SC)</a>
+                        <div class="nav-item dropdown d-md-inline-block">
+                            <a id="navbarDropdown" href="#"
+                                class="nav-link me-6 me-sm-4 d-none d-md-inline-block text-white dropdown-toggle rounded"
+                                role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                v-pre>More</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="cv_student1.html">CV (Student 1)</a>
+                                <a class="dropdown-item" href="cv_student2.html">CV (Student 2)</a>
+                                <a class="dropdown-item" href="references.html">References</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="heatmap" id="heatmap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-9">
+                    <div class="about-wlan my-4">
+                        <h1 class="about-text">About this page:</h1>
+                        <p class="about-site-text">
+                            We are presenting our findings regarding the Wireless Local
+                            Area Network (WLAN) survey. There will four pictures of the heatmaps
+                            and eight pictures for screenshots from the application that we have
+                            used, Netspot.
+                        </p>
+                        <p class="about-site-text">
+                            The location of our survey is done in Rio's house, which has a 15.2 m x 14.95 m area.
+                            The WiFi access points are all 5 GHz WiFi 5, one is the house's only router and the other
+                            two
+                            are our phone's mobile hotspot. The middle access point is the router, the right access
+                            point
+                            is Rio's phone, and the left access point is Rafa's phone.
+                        </p>
+                        <p class="about-site-text text-center">(P.S. You can click to resize the images below.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-9 text-center">
+                    <img class="heatmap-img-overlay img-fluid imageDialog"
+                        src="../ECE2500-Assignment3/images/heatmaps/heatmap-overlap.jpeg" alt=""
+                        data-id="../ECE2500-Assignment3/images/heatmaps/heatmap-overlap.jpeg" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-bs-image="image1">
+                    <p class="about-site-text text-center">Heatmap for all access point</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <img class="heatmap-img-individual imageDialog"
+                        src="../ECE2500-Assignment3/images/heatmaps/heatmap-rafa-ph.jpeg" alt=""
+                        data-id="../ECE2500-Assignment3/images/heatmaps/heatmap-rafa-ph.jpeg" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-bs-image="image2">
+                    <p class="about-site-text text-center">Heatmap for Rafa personal hotspot</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <img class="heatmap-img-individual imageDialog"
+                        src="../ECE2500-Assignment3/images/heatmaps/heatmap-wifi-router.jpeg" alt=""
+                        data-id="../ECE2500-Assignment3/images/heatmaps/heatmap-wifi-router.jpeg" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-bs-image="image3">
+                    <p class="about-site-text text-center">Heatmap for Router</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <img class="heatmap-img-individual imageDialog"
+                        src="../ECE2500-Assignment3/images/heatmaps/heatmap-rio-ph.jpeg" alt=""
+                        data-id="../ECE2500-Assignment3/images/heatmaps/heatmap-rio-ph.jpeg" data-bs-toggle="modal"
+                        data-bs-target="#imageModal" data-bs-image="image4">
+                    <p class="about-site-text text-center">Heatmap for Rio personal hotspot</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="section" id="imageCarousel">
+        <div class="container my-3">
+            <div class="row justify-content-center">
+                <div class="image-carousel col-12 col-sm-12 col-lg-8 rounded">
+                    <div class="carousel-title align-items-center">
+                        <h1 class="about-text text-center">Screenshots</h1>
+                    </div>
+                    <div class="carousel slide rounded" id="carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner align-items-center">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-1.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-1.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-2.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-2.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-3.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-3.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel3">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-4.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-4.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel4">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-5.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-5.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel5">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-6.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-6.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel6">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-7.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-7.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel7">
+                            </div>
+                            <div class="carousel-item " data-bs-interval="5000">
+                                <img class="image-slide d-block w-100 rounded lazy imageDialog"
+                                    src="../ECE2500-Assignment3/images/screenshots/screenshot-8.jpeg" alt=""
+                                    data-id="../ECE2500-Assignment3/images/screenshots/screenshot-8.jpeg"
+                                    data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="carousel8">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="prev"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="next"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="carousel-footer text-center">
+                        <p class="about-site-text">
+                            (P.S. You can go through the screenshots by clicking on the left or
+                            right side of the images.)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"
+                        id="closeModal"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid image-modal" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        //Script for Image Modal.
+        $(document).on('click', '.imageDialog', function () {
+            var imageSource = $(this).data('id');
+            $('#modalImage').attr('src', imageSource);
+        });
+    </script>
+</body>
+
+</html>
